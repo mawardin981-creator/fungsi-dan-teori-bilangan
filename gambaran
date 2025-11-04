@@ -1,0 +1,16 @@
+PS C:\Users\limlo> python
+Python 3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy as np
+>>> import matplotlib.pyplot as plt
+>>> def f_linear(x): return 2*x + 3
+... def f_kuadrat(x): return x**2 + 2*x + 1
+... def f_kubik(x): return x*3 - 3*x*2 + 2
+... x = np.linspace(-5, 5, 100)
+... plt.plot(x, f_linear(x), label="Linear: 2x + 3")
+... plt.plot(x, f_kuadrat(x), label="Kuadrat: x² + 2x + 1")
+... plt.plot(x, f_kubik(x), label="Kubik: x³ - 3x² + 2")
+... plt.title("Visualisasi Fungsi Linear, Kuadrat, dan Kubik")
+... plt.xlabel("x")
+... plt.legend()
+... plt.grid(True)
