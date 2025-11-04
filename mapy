@@ -1,0 +1,14 @@
+PS C:\Users\limlo> python
+Python 3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy as np
+>>> #membuat Array ID
+>>> x = np.array([1,2,3,4,5])
+>>> print(x)
+[1 2 3 4 5]
+>>> # membuat array 2D (matriks)
+>>> m = np.array([[1, 2], [3, 4]])
+>>> print(m)
+[[1 2]
+ [3 4]]
+>>>
