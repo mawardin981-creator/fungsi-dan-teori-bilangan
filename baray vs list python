@@ -1,0 +1,15 @@
+PS C:\Users\limlo> python
+Python 3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x_list = [0,1,2,3,4,5]
+>>> print(2 * x_list + 3) # ERROR
+Traceback (most recent call last):
+  File "<python-input-1>", line 1, in <module>
+    print(2 * x_list + 3) # ERROR
+          ~~~~^~
+TypeError: can only concatenate list (not "int") to list
+>>> import numpy as np
+>>> x_array = np.array([0,1,2,3,4])
+>>> print(2 * x_array + 3) # langsung bekerja
+[ 3  5  7  9 11]
+>>>
